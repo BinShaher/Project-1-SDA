@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - BinShaher</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Team-Boxed.css">
+</head>
+
+<body id="page-top" onload="printPosts()">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluids d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-fingerprint"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>BinShaher</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/index.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button></div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">Dashboard</h3><a id="createPostButton" class="btn btn-primary btn-sm d-none d-sm-inline-block create-post-button" role="button" href="#" onclick="showCreatePost()"><strong>Create</strong></a>
+                    </div>
+                </div>
+                <section class="login-clean">
+                    <form id="createPostForm" method="dialog" style="display: none;">
+                        <input class="form-control" type="text" id="postTitle" placeholder="Post Title">
+                        <div class="illustration"></div><input class="form-control" type="text" id="postContent" placeholder="Post Content">
+                        <input id="postPhoto" type="file" class="form-control" />
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" onclick="addPost()">Post</button></div>
+                    </form>
+                    <div class="container">
+                        <section class="team-boxed">
+                            <div class="container">
+                                <div class="intro">
+                                    <h2 class="text-center">Posts</h2>
+                                </div>
+                                <div class="row posts">
+                                    <div class="col-md-6 col-lg-4 item">
+                                        <div class="box" id="postBox">
+                                            <p id="postBoxx"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © BinShaher 2021</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
